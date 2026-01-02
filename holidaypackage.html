@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>holiday package</title>
+
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    
+    body {
+      background-color: #e6e6f5;
+      font-family: Arial;
+    }
+
+    
+    .top-bar {
+      background-color: #6b4ee6;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu li {
+      font-size: 14px;
+    }
+
+    
+    .title-area {
+      background-color: #0b0b5a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .box {
+      background-color: white;
+      width: 700px;
+      padding: 30px;
+      border-radius: 8px;
+      height: 520px;
+    }
+
+
+    .line {
+      display: flex;
+      gap: 15px;
+    }
+
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+
+    label {
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    input, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 15px 0;
+      font-size: 13px;
+    }
+
+    
+    .btn {
+      background-color: #6b4ee6;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div>BE-WISE</div>
+    <ul class="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Competition</li>
+      <li>Register</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <div class="title-area">
+    <h1>MUGISHA RUSHINGA Guevara</h1>
+  </div>
+
+  <div class="center">
+    <form class="box">
+
+      <div class="line">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text">
+        </div>
+
+        <div class="input-box">
+          <label>School Name</label>
+          <input type="text">
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email">
+        </div>
+
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="tel">
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label>Project Title</label>
+        <input type="text">
+      </div>
+
+      <div class="input-box">
+        <label>Project Type</label>
+        <select>
+          <option>Web</option>
+          <option>Mobile App</option>
+          <option>Desktop App</option>
+        </select>
+      </div>
+
+      <div class="input-box">
+        <label>Upload Project</label>
+        <input type="file">
+      </div>
+
+      <div class="check">
+        <input type="checkbox">
+        <span>I accept terms and conditions</span>
+      </div>
+
+      <button class="btn">Submit Registration</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
