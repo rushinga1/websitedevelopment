@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>holiday package</title>
+  <title>BE-WISE Registration</title>
 
   <style>
     * {
@@ -9,55 +9,54 @@
       box-sizing: border-box;
     }
 
-    
     body {
       background-color: #e6e6f5;
       font-family: Arial;
     }
 
-    
-    .top-bar {
-      background-color: #6b4ee6;
-      color: white;
-      padding: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    
-    .menu {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    .menu li {
-      font-size: 14px;
-    }
-
-    
-    .title-area {
+    header {
       background-color: #0b0b5a;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
     }
 
-    .center {
+    nav {
+      background-color: #6b4ee6;
+      margin-top: 15px;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
       display: flex;
       justify-content: center;
-      margin-top: 40px;
+      gap: 20px;
     }
 
-    .box {
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    main header {
+      background-color: transparent;
+      color: #0b0b5a;
+      padding: 20px 0;
+    }
+
+    main header h2 {
+      text-align: center;
+    }
+
+    form {
       background-color: white;
-      width: 700px;
+      width: 520px;
       padding: 30px;
       border-radius: 8px;
-      height: 520px;
     }
-
 
     .line {
       display: flex;
@@ -71,7 +70,6 @@
       width: 100%;
     }
 
-
     label {
       font-size: 13px;
       margin-bottom: 6px;
@@ -83,17 +81,14 @@
       border-radius: 5px;
     }
 
-    
     .check {
       display: flex;
-      align-items: center;
       gap: 8px;
       margin: 15px 0;
       font-size: 13px;
     }
 
-    
-    .btn {
+    button {
       background-color: #6b4ee6;
       color: white;
       border: none;
@@ -107,23 +102,28 @@
 
 <body>
 
-  <div class="top-bar">
-    <div>BE-WISE</div>
-    <ul class="menu">
-      <li>Home</li>
-      <li>About</li>
-      <li>Competition</li>
-      <li>Register</li>
-      <li>Contact</li>
-    </ul>
-  </div>
+  <header>
+    <h1>BE-WISE</h1>
+    <p>Official Competition Platform</p>
 
-  <div class="title-area">
-    <h1>MUGISHA RUSHINGA Guevara</h1>
-  </div>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Competition</li>
+        <li>Register</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="center">
-    <form class="box">
+  <main>
+
+    <header>
+      <h2>BE-WISE Student Registration Portal</h2>
+    </header>
+
+    <form>
 
       <div class="line">
         <div class="input-box">
@@ -173,10 +173,11 @@
         <span>I accept terms and conditions</span>
       </div>
 
-      <button class="btn">Submit Registration</button>
+      <button type="submit">Submit Registration</button>
 
     </form>
-  </div>
+
+  </main>
 
 </body>
 </html>
